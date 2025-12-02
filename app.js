@@ -18,4 +18,4 @@ app.use('/', require('./routes/pages/menu'))
 
 //things printed to the console when the server is running
 app.listen(port, () => console.log(`Listening on port: ${port}`))
-//app.listen(port, ()=>console.log(`http://localhost:${port}`))
+app.listen(port, ()=>console.log(`http://localhost:${port}`))
