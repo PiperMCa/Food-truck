@@ -1,0 +1,164 @@
+{
+    "Drinks": [
+      {
+        "name": "Drip Coffee",
+        "description": "Light, Medium, or Dark Roast",
+        "price": "",
+        "imageUrl": "---"
+      },
+      {
+        "name": "Cold Brew",
+        "description": "Smooth, strong, served over ice",
+        "price": "",
+        "imageUrl": "---"
+      },
+      {
+        "name": "Iced Latte",
+        "description": "Classic espresso + cold milk",
+        "price": "",
+        "imageUrl": "---"
+      },
+      {
+        "name": "Vanilla Bean Latte",
+        "description": "Warm, sweet, and creamy",
+        "price": "",
+        "imageUrl": "---"
+      },
+      {
+        "name": "Caramel Mocha",
+        "description": "Chocolate + caramel + espresso",
+        "price": "",
+        "imageUrl": "---"
+      },
+      {
+        "name": "Dirty Chai",
+        "description": "Chai latte with a shot of espresso",
+        "price": "",
+        "imageUrl": "---"
+      },
+      {
+        "name": "Matcha Latte",
+        "description": "Earthy green tea matcha",
+        "price": "",
+        "imageUrl": "---"
+      },
+      {
+        "name": "Hot Chocolate",
+        "description": "Rich cocoa with whipped cream",
+        "price": "",
+        "imageUrl": "---"
+      },
+      {
+        "name": "Seasonal Special",
+        "description": "(Pumpkin Spice, Peppermint Mocha, etc.)",
+        "price": "",
+        "imageUrl": "---"
+      }
+    ],
+  
+    "Baked Goods": [
+      {
+        "name": "Chocolate Chunk Cookie",
+        "description": "Soft, gooey, classic",
+        "price": "",
+        "imageUrl": "---"
+      },
+      {
+        "name": "Blueberry Muffin",
+        "description": "Buttery with crumb topping",
+        "price": "",
+        "imageUrl": "---"
+      },
+      {
+        "name": "Banana Walnut Bread",
+        "description": "Thick slice, toasted on request",
+        "price": "",
+        "imageUrl": "---"
+      },
+      {
+        "name": "Cinnamon Swirl Roll",
+        "description": "Cream cheese icing",
+        "price": "",
+        "imageUrl": "---"
+      },
+      {
+        "name": "Croissant",
+        "description": "Buttery, flaky, fresh-baked",
+        "price": "",
+        "imageUrl": "---"
+      },
+      {
+        "name": "Almond Croissant",
+        "description": "Filled with almond cream",
+        "price": "",
+        "imageUrl": "---"
+      },
+      {
+        "name": "Brown Butter Blondie",
+        "description": "Dense, caramelized, delicious",
+        "price": "",
+        "imageUrl": "---"
+      },
+      {
+        "name": "Mini Donut Pack",
+        "description": "Cinnamon-sugar or glazed",
+        "price": "",
+        "imageUrl": "---"
+      },
+      {
+        "name": "Vegan Chocolate Cupcake",
+        "description": "Rich + dairy-free",
+        "price": "",
+        "imageUrl": "---"
+      }
+    ],
+  
+    "Breakfast Bites": [
+      {
+        "name": "Bacon & Cheddar Biscuit",
+        "description": "Savory, warm",
+        "price": "",
+        "imageUrl": "---"
+      },
+      {
+        "name": "Ham & Swiss Croissant Melt",
+        "description": "",
+        "price": "",
+        "imageUrl": "---"
+      },
+      {
+        "name": "Granola Yogurt Parfait",
+        "description": "Fruit + honey",
+        "price": "",
+        "imageUrl": "---"
+      },
+      {
+        "name": "Avocado Toast Bite",
+        "description": "Mini portion, sesame seeds & chili flakes",
+        "price": "",
+        "imageUrl": "---"
+      }
+    ],
+  
+    "Extras": [
+      {
+        "name": "Oat / Almond / Soy Milk",
+        "description": "",
+        "price": "",
+        "imageUrl": "---"
+      },
+      {
+        "name": "Extra Espresso Shot",
+        "description": "",
+        "price": "",
+        "imageUrl": "---"
+      },
+      {
+        "name": "Flavored Syrups",
+        "description": "Vanilla, Hazelnut, Caramel, Lavender",
+        "price": "",
+        "imageUrl": "---"
+      }
+    ]
+  }
+  
