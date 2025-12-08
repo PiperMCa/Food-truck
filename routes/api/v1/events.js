@@ -5,7 +5,7 @@ const {getCollection, ObjectId} = require('../../../dbconnect')
 
 
 //gets all of the event items
- router.get('/api/v1/events', async (_, response) =>{
+ router.get('/', async (_, response) =>{
     const eventItems = await getCollection('FoodTruckAPI','Events')
   const items = await eventItems.find({}).toArray()
   response.send(items)
@@ -13,7 +13,7 @@ const {getCollection, ObjectId} = require('../../../dbconnect')
 })
 
 //gets the event item with the specified id
- router.get('/api/v1/events/:id', async (request, response) =>{
+ router.get('/:id', async (request, response) =>{
    const {id} = request.params
 
    try{
@@ -29,7 +29,7 @@ const {getCollection, ObjectId} = require('../../../dbconnect')
 })
 
 //adds a new event item to the list
- router.post('/api/v1/events', async (request, response) =>{
+ router.post('/', async (request, response) =>{
      try{
     const eventItems=await getCollection('FoodTruckAPI','Events')
     const id = eventItems.lentgh + 1 //new id
