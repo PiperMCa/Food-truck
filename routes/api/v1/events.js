@@ -1,7 +1,7 @@
 //require express router
 const router = require('express').Router()
 //variable for the db connection
-const {getCollection, ObjectId} = require('../../../../dbconnect')
+const {getCollection, ObjectId} = require('../../../dbconnect')
 
 
 //gets all of the event items
