@@ -1,7 +1,7 @@
 //require express router
 const router = require('express').Router()
 //variable for the db connection
-const {getCollection} = require('../../../dbconnect')
+const {getCollection,ObjectId} = require('../../../dbconnect')
 
 
 //gets all of the menu items
@@ -20,7 +20,9 @@ const {getCollection} = require('../../../dbconnect')
 
    try{
     const menuItems=await getCollection('FoodTruckAPI','MenuItems')
-    const found = await menuItems.findOne({_id: new ObjectId(id)})
+    const found =  menuItems.find(item =>{
+        return item.id.toString() === id
+   })
 
     if (found) return response.send(found)
     response.status(404).send({error: 'Could not find menu item with id '+id})
