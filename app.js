@@ -13,8 +13,9 @@ app.use('/api/v1/events', require('./api/v1/events'))
 app.use('/api/v1/menu', require('./api/v1/menu'))
 
 //routes for our html pages
-app.use('/', require('./routes/pages/events'))
-app.use('/', require('./routes/pages/menu'))
+app.use('/', require('./routes/pages/static'))//menu is on the homepage
+app.use('/', require('./routes/pages/events'))//may need to change the '/'
+
 
 //things printed to the console when the server is running
 app.listen(port, () => console.log(`Listening on port: ${port}`))
