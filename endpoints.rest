@@ -27,46 +27,30 @@ GET {{apiUrl}}events/1
 
 
 ### Add Menu Endpoint
-POST {{apiUrl}}recipes/add
+POST {{apiUrl}}menu
 Content-Type: application/json
 
 {
-	"title": "Brown Sugar Apple Pie",
-	"image": "https://images.pexels.com/photos/5836631/pexels-photo-5836631.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-	"description": "A delicious apple pie with a brown sugar twist.",
-	"ingredients": [
-		"Apples",
-		"Brown Sugar",
-		"Cinnamon",
-		"Nutmeg",
-		"Flour",
-		"Butter",
-		"Salt"
-	],
-	"instructions": "Peel and slice apples. Mix with brown sugar, cinnamon, and nutmeg. Pour into pie crust. Mix flour, butter, sugar, and salt. Pour over apples. Bake at 350 degrees for 45 minutes.",
-	"prepTime": 30,
-	"difficulty": "Easy"
+	"id": "23",
+    "type": "Baked",
+	"item": "Mini Apple Pie",
+    "description": "A delicious apple pie with a brown sugar twist. Perfect for and individual.",
+    "cost": "$2.99",
+	"image": "https://images.pexels.com/photos/5836631/pexels-photo-5836631.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
 }
 
 ### Add Event Endpoint
-POST {{apiUrl}}recipes/add
+POST {{apiUrl}}events
 Content-Type: application/json
 
 {
-	"title": "Brown Sugar Apple Pie",
-	"image": "https://images.pexels.com/photos/5836631/pexels-photo-5836631.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-	"description": "A delicious apple pie with a brown sugar twist.",
-	"ingredients": [
-		"Apples",
-		"Brown Sugar",
-		"Cinnamon",
-		"Nutmeg",
-		"Flour",
-		"Butter",
-		"Salt"
-	],
-	"instructions": "Peel and slice apples. Mix with brown sugar, cinnamon, and nutmeg. Pour into pie crust. Mix flour, butter, sugar, and salt. Pour over apples. Bake at 350 degrees for 45 minutes.",
-	"prepTime": 30,
-	"difficulty": "Easy"
+    "id": "7",
+    "name": "Winter Event",
+	"date": "January 1, 2026",
+    "time": "12PM - 4PM",
+    "location": "Fox Valley Technical College",
+    "description": "Join Us for coffee and treats to celebrate the new year!",
+	
+	
 }
 
