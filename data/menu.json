@@ -1,10 +1,13 @@
 {
     "Drinks": [
       {
-        "name": "Drip Coffee",
+       "id": 1,
+       "type": "Drinks",
+        "item": "Drip Coffee",
         "description": "Light, Medium, or Dark Roast",
-        "price": "",
-        "imageUrl": "---"
+        "cost": "$3.00 / $3.50",
+        "image": "https://www.wakacoffee.com/cdn/shop/articles/best-instant-coffee-recipe-online_2.jpg?v=1558039854"
+
       },
       {
         "name": "Cold Brew",
