@@ -20,7 +20,7 @@ const {getCollection,ObjectId} = require('../../../dbconnect')
 
    try{
     const menuItems=await getCollection('FoodTruckAPI','MenuItems')
-    const found =  menuItems.find(item =>{
+    const found = await menuItems.findOne(item =>{
         return item.id.toString() === id
    })
 

@@ -18,7 +18,7 @@ const {getCollection, ObjectId} = require('../../../dbconnect')
 
     try{
     const eventItems=await getCollection('FoodTruckAPI','Events')
-    const found =  eventItems.find(item =>{
+    const found = await eventItems.findOne(item =>{
         return item.id.toString() === id
    })
 
