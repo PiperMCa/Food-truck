@@ -3,16 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Purrfect Brew</title>
+    <title>Admin</title>
+    <link rel="stylesheet" href="site.css">
+	<script src="site.js" defer></script>
 </head>
 <body>
-    <form>
-        <!--name, description, price, and image URL-->
-        
-    </form>
-    <form>
-        <!--name, location, date, and time-->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="admin.html">Admin</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div>
+            <h1>
+                Admin
+            </h1>
+            <p>Add new menu item or events here!</p>
+        </div>
+    </header>
 
-    </form>
+    <main class="container">
+
+        <!--menu form-->
+        <section class="admin-section">
+            <h2>Add Menu Item</h2>
+            <form id="menuForm">
+                <label for="menuName">Name: </label>
+                <input type="text" id="menuName" name="menuName" required>
+    
+                <label for="menuDescription">Description: </label>
+                <input type="text" id="menuDescription" name="menuDescription">
+    
+                <label for="menuPrice">Price: </label>
+                <input type="text" id="menuPrice" name="menuPrice">
+    
+                <label for="menuImageUrl">Image URL: </label>
+                <input type="text" id="menuImageUrl" name="menuImageUrl">
+    
+                <button type="submit">Add Menu Item</button>
+            </form>
+        </section>
+    
+        <!--event form -->
+        <section class="admin-section">
+            <h2>Add Event</h2>
+            <form id="eventForm">
+                <label for="eventName">Name: </label>
+                <input type="text" id="eventName" name="eventName" required>
+    
+                <label for="eventLocation">Location: </label>
+                <input type="text" id="eventLocation" name="eventLocation" required>
+    
+                <label for="eventDate">Date: </label>
+                <input type="date" id="eventDate" name="eventDate" required>
+    
+                <label for="eventTime">Time: </label>
+                <input type="time" id="eventTime" name="eventTime">
+    
+                <button type="submit">Add Event</button>
+            </form>
+        </section>
+    </main>    
 </body>
 </html>

@@ -4,25 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="/site.css">
-	<script src="/site.js" defer></script>
+    <link rel="stylesheet" href="site.css">
+	<script src="site.js" defer></script>
 </head>
 <body>
     <nav>
         <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/events.html">Events</a></li>
-            <li><a href="/admin.html">Admin</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="admin.html">Admin</a></li>
         </ul>
     </nav>
     <header>
-        <div>
+        <div class="header-content">
             <h1>
                 Purrfect Brew
             </h1>
-            <p></p>
         </div>
     </header>
+    <section class="intro-text">
+        <p>
+            Welcome to Purrfect Brew, your favorite coffee shop on wheels! 
+            We bring the aroma of freshly brewed coffee and the warmth of a 
+            cozy café straight to your neighborhood. From rich espresso 
+            drinks to creamy lattes and sweet treats, our menu is designed 
+            to satisfy every coffee lover. Whether you're grabbing a quick 
+            cup on your way to work or enjoying a leisurely afternoon, we're 
+            here to make every sip memorable.
+            <br>
+            At Purrfect Brew, we're proud to be pet-friendly, so your furry 
+            friends can join in the fun! Our name reflects our love for pets 
+            and the community we serve—because great coffee is even better 
+            when shared with those you love. Stop by for a chat, a snack, 
+            or just to enjoy a moment of calm in your day. We can't wait 
+            to welcome you and your four-legged companions to our mobile 
+            café experience!
+        </p>
+    </section>
     <main class="container">
         <section class="menu-section">
             <h1>Our Menu</h1>
@@ -39,10 +57,32 @@
 
             <!--js-->
 
-            
+
             <div id="events-overview"></div>
         </section>
     </main>
-    
+    <div class="modal" id="menuModal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <img id="modalImage" src="" alt="menuImage">
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+            <p id="modalPrice"></p>
+        </div>
+    </div>
+
+    <div class="modal" id="eventModal">
+        <div class="modal-content">
+            <span class="close-button-event">&times;</span>
+            <h2 id="eventModalTitle"></h2>
+            <p><strong>Date:</strong> <span id="eventModalDate"></span></p>
+            <p><strong>Time:</strong> <span id="eventModalTime"></span></p>
+            <p><strong>Location:</strong> <span id="eventModalLocation"></span></p>
+            <!--click to see event-->
+            <p>
+                <a id="eventLink" href="/public/events.html">See Event Details</a>
+            </p>
+        </div>
+    </div>
 </body>
 </html>
