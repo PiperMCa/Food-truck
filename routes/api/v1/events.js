@@ -32,7 +32,7 @@ const {getCollection, ObjectId} = require('../../../dbconnect')
  router.post('/', async (request, response) =>{
      try{
     const eventItems=await getCollection('FoodTruckAPI','Events')
-    const id = eventItems.lentgh + 1 //new id
+    const id = eventItems.length + 1 //new id
     const item = await eventItems.insertOne(request.body)
     const newItem = {id, ...item}
     response.send(newItem)

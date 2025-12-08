@@ -1,7 +1,7 @@
 //require express router
 const router = require('express').Router()
 //variable for the db connection
-const {getCollection, ObjectId} = require('../../../dbconnect')
+const {getCollection} = require('../../../dbconnect')
 
 
 //gets all of the menu items
@@ -35,7 +35,7 @@ const {getCollection, ObjectId} = require('../../../dbconnect')
  router.post('/', async (request, response) =>{
    try{
     const menuItems=await getCollection('FoodTruckAPI','MenuItems')
-    const id = menuItems.lentgh + 1 //new id
+    const id = menuItems.length + 1 //new id
     const item = await menuItems.insertOne(request.body)
     const newItem = {id, ...item}
     response.send(newItem)
