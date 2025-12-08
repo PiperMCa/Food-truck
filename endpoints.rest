@@ -1,3 +1,72 @@
 ### Variables
-@url = http://localhost:3010/
-@apiUrl = http://localhost:3010/api/v1/
+@url = http://localhost:3000/
+@apiUrl = http://localhost:3000/api/v1/
+
+### Endpoint
+GET {{apiUrl}}
+
+
+
+### Menu List Endpoint
+GET {{apiUrl}}menu
+
+
+
+### Menu Item Endpoint
+GET {{apiUrl}}menu/1
+
+
+
+### Event List Endpoint
+GET {{apiUrl}}events
+
+
+### Event Item Endpoint
+GET {{apiUrl}}events/1
+
+
+
+### Add Menu Endpoint
+POST {{apiUrl}}recipes/add
+Content-Type: application/json
+
+{
+	"title": "Brown Sugar Apple Pie",
+	"image": "https://images.pexels.com/photos/5836631/pexels-photo-5836631.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+	"description": "A delicious apple pie with a brown sugar twist.",
+	"ingredients": [
+		"Apples",
+		"Brown Sugar",
+		"Cinnamon",
+		"Nutmeg",
+		"Flour",
+		"Butter",
+		"Salt"
+	],
+	"instructions": "Peel and slice apples. Mix with brown sugar, cinnamon, and nutmeg. Pour into pie crust. Mix flour, butter, sugar, and salt. Pour over apples. Bake at 350 degrees for 45 minutes.",
+	"prepTime": 30,
+	"difficulty": "Easy"
+}
+
+### Add Event Endpoint
+POST {{apiUrl}}recipes/add
+Content-Type: application/json
+
+{
+	"title": "Brown Sugar Apple Pie",
+	"image": "https://images.pexels.com/photos/5836631/pexels-photo-5836631.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+	"description": "A delicious apple pie with a brown sugar twist.",
+	"ingredients": [
+		"Apples",
+		"Brown Sugar",
+		"Cinnamon",
+		"Nutmeg",
+		"Flour",
+		"Butter",
+		"Salt"
+	],
+	"instructions": "Peel and slice apples. Mix with brown sugar, cinnamon, and nutmeg. Pour into pie crust. Mix flour, butter, sugar, and salt. Pour over apples. Bake at 350 degrees for 45 minutes.",
+	"prepTime": 30,
+	"difficulty": "Easy"
+}
+
