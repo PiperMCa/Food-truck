@@ -1,12 +1,14 @@
 {
   "dependencies": {
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "mongodb": "^6.3.0"
   },
   "name": "food-truck",
   "version": "1.0.0",
   "description": "",
   "main": "dbconnect.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
