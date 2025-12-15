@@ -5,44 +5,34 @@ const {getCollection, ObjectId} = require('../../../dbconnect')
 
 
 //gets all of the event items
- router.get('/', async (_, response) =>{
-    console.log('hi')
-    const eventItems = await getCollection('FoodTruckAPI','Events')
-  const items = await eventItems.find({}).toArray()
+ router.get('/', (_, response) =>{
+    
+const eventItems =  getCollection('FoodTruckAPI','Events')
+  const items =  eventItems.find({}).toArray()
   response.send(items)
 
 })
 
 //gets the event item with the specified id
- router.get('/:id', async (request, response) =>{
-   const {id} = request.params
-
-    try{
-    const eventItems=await getCollection('FoodTruckAPI','Events')
-    const found = await eventItems.findOne(item =>{
-    return item.id.toString() === id
-   })
-
+ router.get('/events/:id', async (request, response) =>{
+    const {id} = request.params
+    const collection= await getCollection('FoodTruckAPI','Events')
+    const found = await collection.findOne({_id:new ObjectId(id)})
     if (found) return response.send(found)
-    response.status(404).send({error: 'Could not find event with id '+id})
-   }
-   catch{
-   response.status(404).send({error: 'Could not fetch event'})
-   }
+    response.status(404).send({error: 'Could not find event with id '+ {_id}})
+   
+   
+   
 })
 
 //adds a new event item to the list
- router.post('/', async (request, response) =>{
-     try{
-    const eventItems=await getCollection('FoodTruckAPI','Events')
-    const id = eventItems.length + 1 //new id
-    const item = await eventItems.insertOne(request.body)
-    const newItem = {id, ...item}
-    response.send(newItem)
-   }
-   catch{
-    response.status(500).send({error: 'Could not add event item'})
-   }
+ router.post('/events', async (request, response) =>{
+   
+    const {id, name, time, location, description, date} = request.body
+    const collection=await getCollection('FoodTruckAPI','Events')//new id
+    const results =await collection.insertOne({id, name, time, location, description, date})
+    response.send(results)
+   
 })
 
 //return the routes
