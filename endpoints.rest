@@ -49,7 +49,7 @@ Content-Type: application/json
 	"date": "January 1, 2026",
     "time": "12PM - 4PM",
     "location": "Fox Valley Technical College",
-    "description": "Join Us for coffee and treats to celebrate the new year!",
+    "description": "Join Us for coffee and treats to celebrate the new year!"
 	
 	
 }
