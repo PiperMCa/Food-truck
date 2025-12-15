@@ -76,6 +76,8 @@ const showEventsList = eventsData => {
         eventItem.innerHTML = `
             <h2>${event.name}</h2>
             <p>${event.date}</p>
+            <p>${event.time}</p>
+            <p>${event.location}</p>
         `;
         eventItem.onclick = () => showEventDetails(event._id);
         eventsList.appendChild(eventItem);
