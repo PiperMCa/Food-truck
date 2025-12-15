@@ -5,10 +5,10 @@ const {getCollection, ObjectId} = require('../../../dbconnect')
 
 
 //gets all of the event items
- router.get('/', (_, response) =>{
+ router.get('/',async (_, response) =>{
     
-const eventItems =  getCollection('FoodTruckAPI','Events')
-  const items =  eventItems.find({}).toArray()
+  const eventItems = await getCollection('FoodTruckAPI','Events')
+  const items =  await eventItems.find({}).toArray()
   response.send(items)
 
 })

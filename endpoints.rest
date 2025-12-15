@@ -27,7 +27,7 @@ GET {{apiUrl}}/events/1
 
 ### Add Menu Endpoint
 POST {{apiUrl}}/menu/add
-Content-Type: application/json
+
 
 {
 	"id": "23",
@@ -40,7 +40,7 @@ Content-Type: application/json
 
 ### Add Event Endpoint
 POST {{apiUrl}}/events/add
-Content-Type: application/json
+
 
 {
     "id": "7",
