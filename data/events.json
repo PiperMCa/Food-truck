@@ -1,0 +1,54 @@
+{
+    "Events": [
+        {
+            "id": 1,
+            "name": "Art at the Park Appleton",
+            "time": "9am-5pm, 9am-4pm",
+            "location": "City Park / downtown Appleton",
+            "description": "The fair draws ~20,000 visitors and features art, crafts, and food — a high-traffic crowd likely to appreciate a fun cat-themed coffee/baked-goods truck.",
+            "date": "July 26, 2025"
+        },
+        {
+          "id": 2,
+          "name": "Mile of Music 2025 (Mile 12)",
+          "time": "12pm-11pm",
+          "location": "Downtown Appleton, College Ave & various venues",
+          "description": "A big music festival with lots of foot traffic across downtown — fans enjoying music might love grabbing coffee or treats between sets.",
+          "date": "July 31, 2025"
+        },
+        {
+          "id": 3,
+          "name": "Food Truck Fest",
+          "time": "4pm-8pm",
+          "location": "Poplar Hall, downtown Appleton (riverfront area)",
+          "description": "Dedicated food-truck event: perfect environment for a specialty coffee + baked-goods + cat-themed truck.",
+          "date": "July 30, 2025"
+        },
+        {
+          "id": 4,
+          "name": "Light the Night Market",
+          "time": "5pm-10pm",
+          "location": "Downtown Appleton / College Avenue + Houdini Plaza",
+          "description": "Experience the magic of Light the Night Market as we illuminate Downtown Appleton with an enchanting open-air event. This year, the night market embraces a renaissance flair with thrilling elements such as LARP, pirate ship ride, maypole dancing, and more!",
+          "date": "August 22, 2025"
+        },
+        {
+          "id": 5,
+          "name": "Downtown Appleton Farm Market",
+          "time": "8am-12:30pm",
+          "location": "",
+          "description": "Visit 100+ local vendors along College Avenue selling locally grown produce, handcrafted items, baked goods, flowers, hot food, coffee, meats and cheese, and so more!",
+          "date": "June 7, 2025"
+        },
+        {
+          "id": 6,
+          "name": "7th Annual Fox Cities Kidz Expo",
+          "time": "9am-2pm",
+          "location": "Fox Cities Exhibition Center, Downtown Appleton",
+          "description": "Family-oriented expo with 60+ booths and many kids/families — good opportunity for baked goods, warm drinks, and cat-themed appeal for families & children.",
+          "date": "March 1, 2025"
+        }
+    
+    ]
+
+}
