@@ -1,7 +1,4 @@
 
-//(async() => {
-
-
 
 const menuList = document.getElementById("menu-container");
 const eventsList = document.getElementById("events-overview");
@@ -11,6 +8,8 @@ const eventModal = document.getElementById("eventModal");
 
 const closeButtonMenu = menuModal.querySelector(".close-button");
 const closeButtonEvent = eventModal.querySelector(".close-button-event");
+
+const menuModalContent = menuModal.querySelector(".modal-content");
 
 
 //menu modal
@@ -54,41 +53,40 @@ const getEventItem = async (id) => {
 };
  
 //render menu
-const showMenuList = (menuData) => {
-    Object.keys(menuData).forEach(category => {
-        menuData[category]?.forEach(item => {
+const showMenuList = menuData => {
+        menuData.forEach(item => {
             const menuItem = document.createElement("div");
             menuItem.className = "menu-item";
             menuItem.innerHTML = `
-                <h2>${item.name}</h2>
+                <img src="${item.image !== "---" ? item.image : ""}" alt="${item.item}"/>
+                <h2>${item.item}</h2>
                 <p>${item.description}</p>
-                <p>${item.price ? '$' + item.price : ''}</p>
+                <p>${item.cost ? '' + item.cost : ''}</p>
             `;
-            menuItem.onclick = () => showMenuDetails(item);
+            menuItem.onclick = () => showMenuDetails(item._id);
             menuList.appendChild(menuItem);
         });
-    });
 };
 
 //render events
 const showEventsList = (eventsData) => {
-    eventsData?.forEach(event => {
+    eventsData.forEach(event => {
         const eventItem = document.createElement("div");
         eventItem.className = "event-item";
         eventItem.innerHTML = `
             <h2>${event.name}</h2>
             <p>${event.date}</p>
         `;
-        eventItem.onclick = () => showEventDetails(event);
+        eventItem.onclick = () => showEventDetails(event.id);
         eventsList.appendChild(eventItem);
     });
 };
 
 //show menu modal
 const showMenuDetails = (item) => {
-    menuModalElements.title.textContent = item.name;
+    menuModalElements.title.textContent = item.item;
     menuModalElements.description.textContent = item.description;
-    menuModalElements.price.textContent = item.price ? '$' + item.price : '';
+    menuModalElements.price.textContent = item.cost ? '$' + item.cost : '';
     menuModalElements.image.src = item.imageUrl !== "---" ? item.imageUrl : "";
     menuModal.style.display = "flex";
 };
@@ -111,10 +109,11 @@ window.onclick = (e) => {
     if (e.target === eventModal) eventModal.style.display = "none";
 };
 
+(async () => {
    const menuData = await getMenu();
     showMenuList(menuData);
 
     const eventsData = await getEvents();
     showEventsList(eventsData);
 
-//})();
+})();

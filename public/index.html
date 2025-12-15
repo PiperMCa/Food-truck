@@ -44,49 +44,44 @@
     <main class="container">
         <section class="menu-section">
             <h1>Our Menu</h1>
-
             <!--js-->
-
-
-            <div id="menu-container">
-                <section class="menu-item"> 
-                </section>
+            <div id="menu-container" class="menu-list">
+                <!--<section class="menu-item"> 
+                </section> -->
             </div> 
    
             <div class="modal" id="menuModal">
-                <div class="modal-content">
+                 <div class="modal-content">
                     <span class="close-button">&times;</span>
                     <img id="modalImage" src="" alt="menuImage">
                     <h2 id="modalTitle"></h2>
                     <p id="modalDescription"></p>
                     <p> <strong>Price: </strong> <span id="modalPrice"></span></p>
-                </div>
+                </div> 
             </div>
         </section>
 
         <section class="events-section">
             <h1>Upcoming Events</h1>
-
             <!--js-->
+            <div id="events-overview" class="events-list"></div>
 
-
-            <div id="events-overview"></div>
+            <div class="modal" id="eventModal">
+                <div class="modal-content">
+                    <span class="close-button-event">&times;</span>
+                    <h2 id="eventModalTitle"></h2>
+                    <p><strong>Date:</strong> <span id="eventModalDate"></span></p>
+                    <p><strong>Time:</strong> <span id="eventModalTime"></span></p>
+                    <p><strong>Location:</strong> <span id="eventModalLocation"></span></p>
+                    <!--click to see event-->
+                    <p>
+                        <a id="eventLink" href="/public/events.html">See Event Details</a>
+                    </p>
+                </div>
+            </div>
         </section>
+
     </main>
 
-
-    <div class="modal" id="eventModal">
-        <div class="modal-content">
-            <span class="close-button-event">&times;</span>
-            <h2 id="eventModalTitle"></h2>
-            <p><strong>Date:</strong> <span id="eventModalDate"></span></p>
-            <p><strong>Time:</strong> <span id="eventModalTime"></span></p>
-            <p><strong>Location:</strong> <span id="eventModalLocation"></span></p>
-            <!--click to see event-->
-            <p>
-                <a id="eventLink" href="/public/events.html">See Event Details</a>
-            </p>
-        </div>
-    </div>
 </body>
 </html>

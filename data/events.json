@@ -1,5 +1,4 @@
-{
-    "Events": [
+[
         {
             "id": 1,
             "name": "Art at the Park Appleton",
@@ -48,7 +47,4 @@
           "description": "Family-oriented expo with 60+ booths and many kids/families — good opportunity for baked goods, warm drinks, and cat-themed appeal for families & children.",
           "date": "March 1, 2025"
         }
-    
-    ]
-
-}
+]
