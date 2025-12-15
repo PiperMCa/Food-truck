@@ -17,7 +17,7 @@ const {getCollection,ObjectId} = require('../../../dbconnect')
  router.get('/menu/:id', async (request, response) =>{
    const {id} = request.params
     const collection =await getCollection('FoodTruckAPI','MenuItems')
-    const found = await collection.findOne({id:new ObjectId(id)})
+    const found = await collection.findOne({id:parseInt(id)})
     if (found) return response.send(found)
     response.status(404).send({error: 'Could not find menu item with id '+{id}})
    
