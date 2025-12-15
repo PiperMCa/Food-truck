@@ -21,7 +21,8 @@ const eventModalElements = {
     title: document.getElementById("eventModalTitle"),
     date: document.getElementById("eventModalDate"),
     time: document.getElementById("eventModalTime"),
-    location: document.getElementById("eventModalLocation")
+    location: document.getElementById("eventModalLocation"),
+    description: document.getElementById("eventModalDescription")
 };
 
 //get menu
