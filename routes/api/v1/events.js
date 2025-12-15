@@ -26,7 +26,7 @@ const eventItems =  getCollection('FoodTruckAPI','Events')
 })
 
 //adds a new event item to the list
- router.post('/events', async (request, response) =>{
+ router.post('/events/add', async (request, response) =>{
    
     const {id, name, time, location, description, date} = request.body
     const collection=await getCollection('FoodTruckAPI','Events')//new id
