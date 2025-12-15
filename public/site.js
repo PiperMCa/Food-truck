@@ -1,3 +1,8 @@
+
+//(async() => {
+
+
+
 const menuList = document.getElementById("menu-container");
 const eventsList = document.getElementById("events-overview");
 
@@ -37,6 +42,17 @@ const getEvents = async () => {
     return await response.json();
 };
 
+// Get menu item
+const getMenuItem = async (id) => {
+    const response = await fetch(`/api/v1/menu/${id}`);
+    return await response.json();
+};
+// Get event item
+const getEventItem = async (id) => {
+    const response = await fetch(`/api/v1/events/${id}`);
+    return await response.json();
+};
+ 
 //render menu
 const showMenuList = (menuData) => {
     Object.keys(menuData).forEach(category => {
@@ -95,11 +111,10 @@ window.onclick = (e) => {
     if (e.target === eventModal) eventModal.style.display = "none";
 };
 
-
-(async () => {
-    const menuData = await getMenu();
+   const menuData = await getMenu();
     showMenuList(menuData);
 
     const eventsData = await getEvents();
     showEventsList(eventsData);
-})();
+
+//})();

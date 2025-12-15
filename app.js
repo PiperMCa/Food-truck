@@ -3,6 +3,10 @@ const express = require('express');//require expressjs module (pull it in)
 const app = express();//create an express application
 const port = 3000;//define port number it runs on
 
+
+const path = require('path')
+const root = path.join(__dirname, "public")
+
 //ensure express can send json
 app.use(express.json())
 //let express use our static (public) folder (the folder with our html docs)
