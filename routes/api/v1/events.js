@@ -17,9 +17,9 @@ const {getCollection, ObjectId} = require('../../../dbconnect')
  router.get('/events/:id', async (request, response) =>{
     const {id} = request.params
     const collection= await getCollection('FoodTruckAPI','Events')
-    const found = await collection.findOne({_id:new ObjectId(id)})
+    const found = await collection.findOne({id:new ObjectId(id)})
     if (found) return response.send(found)
-    response.status(404).send({error: 'Could not find event with id '+ {_id}})
+    response.status(404).send({error: 'Could not find event with id '+ {id}})
    
    
    
