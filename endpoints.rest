@@ -27,21 +27,15 @@ GET {{apiUrl}}/events/1
 
 ### Add Menu Endpoint
 POST {{apiUrl}}/menu/add
-
-
 {
 	"id": "23",
-    "type": "Baked",
-	"item": "Mini Apple Pie",
+	"name": "Mini Apple Pie",
     "description": "A delicious apple pie with a brown sugar twist. Perfect for and individual.",
-    "cost": "$2.99",
-	"image": "https://images.pexels.com/photos/5836631/pexels-photo-5836631.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    "price": "$2.99",
 }
 
 ### Add Event Endpoint
 POST {{apiUrl}}/events/add
-
-
 {
     "id": "7",
     "name": "Winter Event",

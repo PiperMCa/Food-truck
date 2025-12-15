@@ -27,9 +27,9 @@ const {getCollection,ObjectId} = require('../../../dbconnect')
 
 //adds a new menu item to the list
  router.post('/menu/add', async (request, response) =>{
-    const {id, type, item, description, cost} = request.body
+    const {id, name, description, price} = request.body
     const collection= await getCollection('FoodTruckAPI','MenuItems')
-    const results = await collection.insertOne({id, type, item, description, cost})
+    const results = await collection.insertOne({id, name, description, price})
     response.send(results)
  
    
