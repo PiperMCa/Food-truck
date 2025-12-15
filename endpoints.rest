@@ -42,7 +42,7 @@ POST {{apiUrl}}/events/add
 {
     "id": "7",
     "name": "Winter Event",
-    "time": "12PM - 4PM",
+    "time": "12PM - 4PM", 
     "location": "Fox Valley Technical College",
     "description": "Join Us for coffee and treats to celebrate the new year!",
 	"date": "January 1, 2026",
