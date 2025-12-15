@@ -22,21 +22,25 @@
             </h1>
         </div>
     </header>
+<section class="events-section">
+            <h1>Upcoming Events</h1>
+            <!--js-->
+            <div id="events-overview" class="events-list"></div>
 
-        <main class="container">
-        <!-- Container for all events -->
-        <div id="events-overview" class="events-list"></div>
-
-        <!-- Event Modal -->
-        <div class="modal" id="eventModal">
-            <div class="modal-content">
-                <span class="close-button-event">&times;</span>
-                <h2 id="eventModalTitle"></h2>
-                <p><strong>Date:</strong> <span id="eventModalDate"></span></p>
-                <p><strong>Time:</strong> <span id="eventModalTime"></span></p>
-                <p><strong>Location:</strong> <span id="eventModalLocation"></span></p>
-                <p id="eventModalDescription"></p>
+            <div class="modal" id="eventModal">
+                <div class="modal-content">
+                    <span class="close-button-event">&times;</span>
+                    <h2 id="eventModalTitle"></h2>
+                    <p><strong>Date:</strong> <span id="eventModalDate"></span></p>
+                    <p><strong>Time:</strong> <span id="eventModalTime"></span></p>
+                    <p><strong>Location:</strong> <span id="eventModalLocation"></span></p>
+                    <!--click to see event-->
+                    <p>
+                        <a id="eventLink" href="/public/events.html">See Event Details</a>
+                    </p>
+                </div>
             </div>
-        </div>
+        </section>
+        
 </body>
 </html>
