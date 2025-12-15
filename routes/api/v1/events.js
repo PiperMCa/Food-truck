@@ -6,6 +6,7 @@ const {getCollection, ObjectId} = require('../../../dbconnect')
 
 //gets all of the event items
  router.get('/', async (_, response) =>{
+    console.log('hi')
     const eventItems = await getCollection('FoodTruckAPI','Events')
   const items = await eventItems.find({}).toArray()
   response.send(items)
@@ -19,7 +20,7 @@ const {getCollection, ObjectId} = require('../../../dbconnect')
     try{
     const eventItems=await getCollection('FoodTruckAPI','Events')
     const found = await eventItems.findOne(item =>{
-        return item.id.toString() === id
+    return item.id.toString() === id
    })
 
     if (found) return response.send(found)
