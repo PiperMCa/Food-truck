@@ -27,6 +27,7 @@ GET {{apiUrl}}/events/1
 
 ### Add Menu Endpoint
 POST {{apiUrl}}/menu/add
+
 {
 	"id": "23",
 	"name": "Mini Apple Pie",
@@ -36,6 +37,7 @@ POST {{apiUrl}}/menu/add
 
 ### Add Event Endpoint
 POST {{apiUrl}}/events/add
+
 {
     "id": "7",
     "name": "Winter Event",
