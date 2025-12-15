@@ -69,7 +69,7 @@ const showMenuList = menuData => {
 };
 
 //render events
-const showEventsList = (eventsData) => {
+const showEventsList = eventsData => {
     eventsData.forEach(event => {
         const eventItem = document.createElement("div");
         eventItem.className = "event-item";
@@ -77,7 +77,7 @@ const showEventsList = (eventsData) => {
             <h2>${event.name}</h2>
             <p>${event.date}</p>
         `;
-        eventItem.onclick = () => showEventDetails(event.id);
+        eventItem.onclick = () => showEventDetails(event._id);
         eventsList.appendChild(eventItem);
     });
 };
@@ -95,8 +95,8 @@ const showMenuDetails = (item) => {
 const showEventDetails = (event) => {
     eventModalElements.title.textContent = event.name;
     eventModalElements.date.textContent = event.date;
-    eventModalElements.time.textContent = event.time || '';
-    eventModalElements.location.textContent = event.location || '';
+    eventModalElements.time.textContent = event.time ;
+    eventModalElements.location.textContent = event.location;
     eventModal.style.display = "flex";
 };
 

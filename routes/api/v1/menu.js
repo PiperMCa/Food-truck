@@ -15,6 +15,7 @@ const {getCollection, ObjectId} = require('../../../dbconnect')
 
 //gets the menu item with the specified id
  router.get('/:id', async (request, response) =>{
+  console.log('Fetching menu item by id')
    const {id} = request.params
 
    try{
@@ -34,6 +35,7 @@ const {getCollection, ObjectId} = require('../../../dbconnect')
 
 //adds a new menu item to the list
  router.post('/', async (request, response) =>{
+  console.log('Adding new menu item')
    try{
     const menuItems=await getCollection('FoodTruckAPI','MenuItems')
     const id = menuItems.length + 1 //new id
